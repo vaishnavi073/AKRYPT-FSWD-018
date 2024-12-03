@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            display: grid;
+            grid-template-rows: 100px 300px;
+        }
+        .red{
+            display: grid;
+            grid-template-columns: 70% 30%;
+        }
+        .green{
+            display: grid;
+            grid-template-rows: 100px 100px 100px;
+        } 
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <p style="background-color: yellow;">Navigation</p>
+        <div class="red">
+            <p style="background-color: red;">LEFT BOX</p>
+            <div class="green">
+                <p style="background-color: lightgreen;">Right Box1</p>
+                <p style="background-color: lightgreen;">Right Box2</p>
+                <p style="background-color: lightgreen;">Right Box3</p> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
