@@ -5,7 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #nav{
+        #container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 100px 100px 100px 100px;
+            margin: 10px;
+        }
+        .nav{
+            background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .red{
+            background-color: red;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        .green{
+            background-color: lightgreen;
+        }
+
+        /* #nav{
             display: grid;
             grid-template-rows: 100px 300px;
         }
@@ -16,11 +37,20 @@
         .green{
             display: grid;
             grid-template-rows: 100px 100px 100px;
-        } 
+        }  */
 
     </style>
 </head>
 <body>
+    <div id="container">
+        <div class="nav">Navigation</div>
+        <p class="red">Left Box</p>
+        <p class="green">Right Box1</p>
+        <p class="green">Right Box2</p>
+        <p class="green">Right Box3</p>
+    </div>
+
+    <!-- Complex
     <div id="nav">
         <p style="background-color: yellow;">Navigation</p>
         <div class="red">
@@ -31,6 +61,6 @@
                 <p style="background-color: lightgreen;">Right Box3</p> 
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
