@@ -1,0 +1,132 @@
+*{
+    font-family: sans-serif;
+}
+
+#nav{
+    font-size: larger;
+    background-color: white; 
+    color: black; 
+    margin: 10px; 
+    display: flex; 
+    gap: 30px;
+}
+
+#logo{
+    padding: 10px 10px 10px 20px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.link{
+    text-decoration: none;
+    padding: 15px;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
+
+#heroimage{
+    width: 100%; 
+    height: 650px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.row1{
+    display: flex; 
+    gap: 20px; 
+    justify-content: space-around; 
+    margin-top: 10px; 
+}
+
+.shop{
+    width: 350px; 
+    height: 500px; 
+    text-align: center; 
+    border: 1px solid black;
+}
+
+.shopimage{
+    width: 100%; 
+    height: 400px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#secondhalf{
+    background-color: gainsboro;
+    
+    padding: 30px;
+}
+
+.headings{
+    padding: 0px 30px 30px 60px;
+    font-size:xx-large;
+    font-weight: normal;
+}
+
+.row2{
+    display: flex; 
+    gap: 20px; 
+    justify-content:center ;
+}
+
+.detail{
+    width: 650px;
+    height: 550px; 
+    /* border: 1px solid black; */
+}
+
+.featured-image{
+    width: 100%; 
+    height: 400px;
+}
+
+p{
+    padding-left: 30px;
+    padding-right: 5px;
+}
+
+.explore-holiday{
+    width: 370px; 
+    height: 450px; 
+    text-align: center; 
+    border: 1px solid black;
+}
+
+.holiday-image{
+    width: 100%; 
+    height: 450px;
+}
+
+#footer{
+    padding: 15px 20px 5px 50px;
+    display: flex;
+    gap: 30px;
+    font-size: x-large;
+}
+.bottom-logo{
+    padding: 20px 10px 10px 20px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.bottom-link{
+    padding-top: 30px;
+    font-size: small;
+}
+
+#second-footer{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.quick-links{
+    font-weight: normal;
+    font-size: x-small;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
