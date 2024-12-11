@@ -1,6 +1,11 @@
 .nav{
     display: flex; 
-    justify-content: space-evenly;  
+    justify-content: space-evenly; 
+    height: 40px; 
+    padding-top: 10px;
+}
+.nav>a{
+    text-decoration: none;
 }
 
 
@@ -9,10 +14,35 @@
     width: 100%;
     height: 700px;
     background-size: cover;
+    position: relative;
+}
+.hero-image .image-text{
+    position: absolute;
+    bottom:300px ;
+    left: 50px;
+    color: white;
 }
 
+.hero-image .image-text>h1{
+    font-size: 60px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.hero-image .image-text>p{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.hero-image .image-text>button{
+    margin-top: 8px;
+    padding: 8px;
+    font-family: sans-serif;
+}
 .row1{
-    margin: 100px 50px 100px 50px ;
+    margin: 150px 50px 100px 50px ;
+    height: 400px;
 }
 .row1>h2{
     text-align: center;
@@ -25,25 +55,55 @@
     display: grid;
     grid-template-columns: repeat(4,2fr);   
     text-align: center;
+    margin-top: 80px;
 }
 
 .company .company-card{
    width: 300px;
 }
-.company .company-card>i{
-    
+.row1 .company .company-card>i{
+    font-size: 60px;
 }
 
+.row1 .company .company-card>p{
+    font-size: 16px;
+}
+
+
 .row2{
-    margin: 100px 50px 100px 50px ;
-    /* display: grid;
-    grid-template-columns: 50% 50%; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #F1F1F1;
+    padding: 50px 10px 50px 10px;
+    height: 600px;
+}
+.row2 .col-1{
+    padding:  100px 50px 100px 50px;
+}
+.row2 .col-1>h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.row2 .col-1>p{
+    font-size: 17px;
+    margin-bottom: 10px;
+    padding-right: 50px;
+}
+.row2 .col-1>button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.row2 .col-2{
+    padding:  100px 50px 100px 50px;
 }
 
 .row3{
-    margin: 100px 50px 100px 50px ;
+    margin: 150px 50px 100px 50px ;
 }
-.row3>h3{
+.row3>h2{
     text-align: center;
 }
 .row3>p{
@@ -59,6 +119,7 @@
     width: 300px;
     height: 400px;
     margin-bottom: 50px;
+    margin-top: 50px;
     background-color: #FFFFFF;
 }
 .card-row .card>img{
@@ -81,28 +142,39 @@
 .row4 .num .detail{
     padding: 50px;
     color: white;
+    text-align: center;
+}
+
+.row4 .num .detail>h2{
+    font-size: 30px;
 }
 
 .row5{
-    margin: 100px 50px 100px 50px;
+    margin: 150px 50px 150px 50px;
 }
 .row5>h3{
     text-align: center;
 }
 .row5>p{
     text-align: center;
+    padding-bottom: 30px;
 }
 .row5 .row-1{
     display: grid;
-    gap: 10px;
+    gap: 15px;
     grid-template-columns: repeat(4,2fr);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.row5 .row-1>img{
+    width: 100%;
 }
 
 .row6{
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #F1F1F1;
+    height: 400px;
 }
 .row6 .col-1{
     padding: 50px;
@@ -119,16 +191,31 @@
     width: 100%;
     padding: 5px;
 }
+.row7{
+    margin-top: 80px;
+    background-color: #F1F1F1;
+}
 
-.row7>h3{
+.row7>h2{
+    padding-top: 100px;
     text-align: center;
 }
 
 .row7>p{
+    font-size: 18px;
     text-align: center;
+}
+
+.row7 .contact{
+    margin-top: 40px;
 }
 .row7 .contact>p{
     padding-left: 10px;
+}
+
+.row7 .contact p>i{
+    font-size: 25px;
+    padding: 10px;
 }
 
 .row7 form{
@@ -148,26 +235,39 @@
 .row7 form>button{
     background-color: black;
     color: white;
-    padding: 8px;
+    padding: 12px;
     margin: 10px;
+    border: none;
 }
-.row7 form>img{
+
+.row7 form>button:hover{
+    background-color: #616161;
+}
+.row7 img{
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .footer{
-    margin-top: 50px;
+    height: 250px;
     width: 100%;
     color: white;
     background-color: black;
 }
 .footer>button{
+    margin-left: 47%;
+    margin-top: 50px;
+    padding: 10px;
+}
+.footer .icons{
     margin-left: 45%;
     margin-top: 20px;
-    padding: 10px;
+    font-size: x-large;
 }
 .footer>p{
     padding-top:10px ;
     text-align: center;
+}
+.footer p>a{
+    color: white;
 }
