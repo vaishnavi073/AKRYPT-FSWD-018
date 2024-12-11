@@ -124,7 +124,8 @@ p{
 }
 
 .quick-links{
-    font-weight: normal;
+    /* font-weight: normal; */
+    font-weight: lighter;
     font-size: x-small;
     display: flex;
     gap: 20px;
