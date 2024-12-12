@@ -1,13 +1,29 @@
-.nav{
-    display: flex; 
-    justify-content: space-evenly; 
-    height: 40px; 
-    padding-top: 10px;
-}
-.nav>a{
-    text-decoration: none;
+*{
+    font-family: sans-serif;
 }
 
+.nav{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    justify-content: space-evenly; 
+    height: 50px; 
+    padding-top: 25px;
+    background-color: aliceblue;
+}
+.nav .logo{
+    padding-left: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.nav .quick-links{
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.nav .quick-links>a{
+    text-decoration: none;
+}
 
 .hero-image{
     background-image:url(https://c0.wallpaperflare.com/preview/18/442/539/apple-device-computer-dark-electronics-thumbnail.jpg) ;
@@ -185,18 +201,84 @@
     letter-spacing: 2px;
 }
 .row6 .col-2>input[type="text"]{
-    background-color: #616161;
+    background-color: #818181;
+    color: white;
+    font-weight: 900;
     text-align: center;
     border: none;
     width: 100%;
     padding: 5px;
 }
+
+.pricing{
+    background-color: #818181;
+    padding-bottom: 50px;
+}
+.pricing>h2{
+    margin-top: 0px;
+    padding-top: 100px;
+    text-align: center;
+}
+.pricing>p{
+    text-align: center;
+}
+.pricing .row-1{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 50px 100px 50px 100px;
+}
+.pricing .row-1 .col-1{
+    width: 250px;
+    height: 470px;
+    margin-left: 90px;
+}
+.pricing .row-1 .col-2{
+    width: 250px;
+    height: 480px;
+}
+.pricing .row-1 .col-1>h2{
+   text-align: center;
+   background-color: black;
+   color: white;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 30px;
+}
+.pricing .row-1 .col-2>h2{
+    background-color: red;
+}
+
+.pricing .row-1 .col-1>p{
+   text-align: center;
+   color: black;
+   background-color: whitesmoke;
+   padding: 20px ;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   border-bottom: 1px solid grey;
+}
+.pricing .row-1 .col-1 .btn{
+    background-color: antiquewhite;
+    padding: 11px;
+}
+.pricing .row-1 .col-2 .btn{
+    padding: 16px;
+}
+.pricing .row-1 .col-1 .btn>button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
 .row7{
-    margin-top: 80px;
     background-color: #F1F1F1;
 }
 
 .row7>h2{
+    margin-top: 0px; 
     padding-top: 100px;
     text-align: center;
 }
