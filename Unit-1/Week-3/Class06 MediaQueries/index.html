@@ -1,0 +1,88 @@
+<!-- Media Queries
+1. Small size upto 480px
+2. Medium size upto 768px
+3. Large size > 768 px -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(4,2fr);
+        }
+        .childDiv{
+            text-align: center;
+            border: 2px solid gray;
+        }
+        #container .childDiv>img{
+            width: 100%;
+        }
+        .btn{
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* For Smaller Device */
+
+        @media screen and (min-width:100px) and (max-width:480px){
+            #container{
+                grid-template-columns: repeat(1,2fr);
+            }
+            .btn{
+                background-color: black;
+                color: white;
+            }
+        }
+         /* For Medium Device */
+
+         @media screen and (min-width:481px) and (max-width:768px){
+            #container{
+                grid-template-columns: repeat(2,2fr);
+            }
+            .btn{
+                background-color: yellow;
+                color: black;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="childDiv">
+            <img style="" src="listing.avif" alt="">
+            <h1>Media Queries</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nostrum libero dolorem odit quaerat.</p>
+            <button class="btn">Click me</button>
+        </div>
+        <div class="childDiv">
+            <img style="" src="listing.avif" alt="">
+            <h1>Media Queries</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nostrum libero dolorem odit quaerat.</p>
+            <button class="btn">Click me</button>
+        </div>
+        <div class="childDiv">
+            <img style="" src="listing.avif" alt="">
+            <h1>Media Queries</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nostrum libero dolorem odit quaerat.</p>
+            <button class="btn">Click me</button>
+        </div>
+        <div class="childDiv">
+            <img style="" src="listing.avif" alt="">
+            <h1>Media Queries</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nostrum libero dolorem odit quaerat.</p>
+            <button class="btn">Click me</button>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -24,6 +24,18 @@
 .nav .quick-links>a{
     text-decoration: none;
 }
+.nav .hideIcon{
+    display: none;
+}
+
+@media screen and (min-width:50px) and (max-width:480px){
+    .nav .quick-links{
+        display: none;
+    }
+    .nav .hideIcon{
+        display: flex;
+    }
+}
 
 .hero-image{
     background-image:url(https://c0.wallpaperflare.com/preview/18/442/539/apple-device-computer-dark-electronics-thumbnail.jpg) ;
@@ -58,7 +70,7 @@
 }
 .row1{
     margin: 150px 50px 100px 50px ;
-    height: 400px;
+    /* height: 400px; */
 }
 .row1>h2{
     text-align: center;
@@ -84,14 +96,19 @@
 .row1 .company .company-card>p{
     font-size: 16px;
 }
-
+@media screen and (min-width:50px) and (max-width:480px){
+    .row1 .company{
+        grid-template-columns: repeat(1,2fr);   
+        
+    }
+}
 
 .row2{
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #F1F1F1;
     padding: 50px 10px 50px 10px;
-    height: 600px;
+    /* height: 600px; */
 }
 .row2 .col-1{
     padding:  100px 50px 100px 50px;
@@ -111,9 +128,22 @@
     color: white;
     padding: 10px;
 }
-
 .row2 .col-2{
     padding:  100px 50px 100px 50px;
+}
+.row2 .col-2>img{
+    float: right;
+}
+
+@media screen and (min-width:50px) and (max-width:480px){
+    .row2{
+        display: block;
+        padding: 10px 20px 10px 20px;
+    }
+    .row2 .col-2>img{
+        float: none;
+        width: 100%;
+    }
 }
 
 .row3{
@@ -146,6 +176,11 @@
     padding-top: 8px;
     padding-bottom: 8px;
 }
+@media screen and (min-width:50px) and (max-width:480px){
+    .row3 .card-row{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 
 .row4{
     background-color: #616161;
@@ -160,9 +195,13 @@
     color: white;
     text-align: center;
 }
-
 .row4 .num .detail>h2{
     font-size: 30px;
+}
+@media screen and (min-width:50px) and (max-width:480px){
+    .row4 .num{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 .row5{
@@ -181,16 +220,20 @@
     grid-template-columns: repeat(4,2fr);
     margin-bottom: 15px;
 }
-
 .row5 .row-1>img{
     width: 100%;
+}
+@media screen and (min-width:50px) and (max-width:480px){
+    .row5 .row-1{
+        grid-template-columns: repeat(1,2fr);
+    }
 }
 
 .row6{
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #F1F1F1;
-    height: 400px;
+    /* height: 400px; */
 }
 .row6 .col-1{
     padding: 50px;
@@ -209,9 +252,15 @@
     width: 100%;
     padding: 5px;
 }
+@media screen and (min-width:50px) and (max-width:480px){
+    .row6{
+        display: block;
+    }
+}
 
 .pricing{
     background-color: #818181;
+    color: white;
     padding-bottom: 50px;
 }
 .pricing>h2{
@@ -271,6 +320,15 @@
     padding: 10px;
     margin-left: 80px;
     margin-top: 10px;
+}
+@media screen and (min-width:50px) and (max-width:480px){
+    .pricing .row-1{
+        display: block;
+        margin: 50px;
+    }
+    .pricing .row-1 .col-1{
+        margin-bottom: 50px;
+    }
 }
 
 .row7{
