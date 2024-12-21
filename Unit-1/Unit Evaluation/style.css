@@ -46,9 +46,6 @@ nav .button>a{
 }
 .hero-image{
     position: relative;
-    background-size: cover;
-    width: 446px;
-    max-width: 600px;
     height: auto;
     box-sizing: border-box;
 }
@@ -77,10 +74,10 @@ nav .button>a{
 
 .hcustomer{
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin: 80px;
     border-radius: 1px solid black;
 }
 .hcustomer .col-1{
