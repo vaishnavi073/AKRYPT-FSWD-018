@@ -1,0 +1,124 @@
+#contact{
+    margin: 80px 50px;
+}
+#contact i{
+    color: white;
+    padding-right: 10px;
+}
+.crow{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 80px;
+    margin: 30px;
+}
+.cdetail{
+    background-color: #3CB815;
+    color: white;
+    width: 60%;
+    height: 400px;
+    padding: 20px 30px;
+}
+.cdetail .col1{
+    margin: 30px;
+}
+.col1 h2, p{
+    margin-bottom: 0;
+    padding-top: 0px;
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.icons .circ{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+}
+.icons i{
+    position: absolute;
+    top: 8px;
+    left: 7px;
+}
+
+.form{
+    padding: 0;
+}
+.form>p{
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 15pt;
+    color: #7A7A7A;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 30px;
+    margin: 20px 0;
+}
+form>input{
+    border: 1px solid rgb(171, 171, 171);
+    padding: 20px 30px;
+}
+form .sub{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+textarea{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* height: 100px; */
+    padding: 20px 30px 50px 30px;
+}
+.form-button{
+    width: 50%;
+    border-radius: 30px;
+    padding: 20px 30px;
+    border: none;
+    color: white;
+    background-color: #3CB815;
+}
+.hero-image img{
+    height: 400px;
+    object-fit: cover;
+    object-position: 90% 25%;
+}
+.image-txt>h1{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.image-txt ul{
+    display: flex;
+    margin: 0;
+}
+.map{
+    padding: 0 50px;
+    margin: 0 50px;
+}
+.map img{
+    width: 100%;
+    height: 400px;
+}
+.error{
+    text-align: center;
+    margin: 50px;
+    padding: 40px;
+}
+.error i{
+    font-size: 70px;
+    color: #3CB815;
+}
+.error button{
+    border-radius: 30px;
+    background-color: #3CB815;
+    border: none;
+    padding: 20px 30px;
+}
+.error a{
+    color: white;
+}
